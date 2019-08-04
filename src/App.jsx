@@ -15,7 +15,6 @@ const App = () => {
       <Router history={history}>
         <Switch>
           <Route path="/" exact component={require('./page/index').default} />
-          <Route path="/AStar-demo" exact component={require('./page/index').default} />
           <Route component={require('./page/404').default} />
         </Switch>
       </Router>
