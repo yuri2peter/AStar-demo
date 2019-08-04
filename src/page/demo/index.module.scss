@@ -1,0 +1,35 @@
+$size: 48px;
+
+.game {
+  .action {
+    padding: 0 1em ;
+    button {
+       margin-left: 1em;
+    }
+  }
+  .row {
+    .block {
+      width: $size;
+      height: $size;
+      margin: 2px;
+      border: 2px solid gray;
+      line-height: $size;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+      &.A { background-color: #6ffb89
+      }
+      &.B { background-color: #fb817d
+      }
+      &.barrier { background-color: #61dafb }
+      &.open { border-color: #6ffb89 }
+      &.close { border-color: #3a6ffb
+      }
+      &.path { font-weight: bold; color: red }
+    }
+  }
+}
